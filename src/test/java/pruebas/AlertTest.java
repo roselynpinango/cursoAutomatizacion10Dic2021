@@ -28,6 +28,13 @@ public class AlertTest {
 	}
 	
 	@Test
+	public void verAlerta6() {
+		driver.findElement(By.xpath("//button[@id='alertButton']")).click();
+		driver.switchTo().alert().accept();
+		System.out.println("Prueba");
+	}
+	
+	@Test
 	public void verAlerta2() {
 		driver.findElement(By.xpath("//button[@id='timerAlertButton']")).click();
 		
